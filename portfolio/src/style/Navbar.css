@@ -1,0 +1,92 @@
+/* Basic navbar styles */
+.navbar {
+    background-color: #fff; /* Change background color as needed */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbarContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 1024px; 
+    margin: 0 auto; 
+  }
+  
+  .logo {
+    font-size: 25px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-list {
+    list-style: none; /* Remove default list style */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin: 0 10px; 
+    font-size: 25px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+  .nav-list a {
+    text-decoration: none; 
+    color: #000; 
+    font-weight: bold;
+    padding: 5px 10px; 
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .nav-list a:hover {
+    background-color: #ddd; /* Hover background color */
+  }
+  
+  .nav-icon {
+    display: none; 
+    cursor: pointer; 
+  }
+  
+  .nav-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000; 
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      font-size: 20px;
+      font-family: "Fira Code", monospace;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: bold;
+      color: #000; /* Text color */
+      text-decoration: none; /* Remove underline */
+    }
+    .nav-list {
+      display: none; 
+    }
+  
+    .nav-icon {
+      display: block; 
+    }
+  }
+  
+  
+  
