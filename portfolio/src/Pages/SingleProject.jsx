@@ -1,16 +1,25 @@
 import React, { useEffect } from "react";
 import "../style/SingleProject.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import data from "../Data/prgData.js";
 
 export default function SingleProject() {
   let { id } = useParams();
+  let navigate = useNavigate();
   id = parseInt(id, 10);
   const projectData = data.find((project) => project.id === id);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]);
+
+  function handleButtonClick() {
+    navigate(`/project/${(id % 4) + 1}`);
+  }
+
+  function handlegithub() {
+    navigate(projectData.link);
+  }
 
   return (
     <div className="prjContainer">
@@ -44,9 +53,36 @@ export default function SingleProject() {
             </div>
           </div>
           <div className="row">
-            <div className="col">Check out the project</div>
-            
+            <div className="col2">
+              <h2>Check out the project</h2>
+              <button className="githublink" onClick={handlegithub}>
+                <img
+                  src="/images/github.png"
+                  alt="github icon"
+                  className="githubicon"
+                />
+                Github
+              </button>
+            </div>
           </div>
+          <div className="row">
+            <div className="col2">
+              {projectData.team ? (
+                <div>
+                  <h2>Team credits </h2>
+                  <p>{projectData.team}</p>
+                </div>
+              ) : (
+                <div></div>
+              )}
+
+              <br></br>
+              <button className="nextproj" onClick={handleButtonClick}>
+                Next Project
+              </button>
+            </div>
+          </div>
+          <hr></hr>
         </section>
       </div>
     </div>

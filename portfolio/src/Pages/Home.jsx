@@ -14,6 +14,13 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="col">
+          <div className="header2">
+            " Transforming visionary designs into tangible, interactive
+            experiences that users can engage with and enjoy. "
+          </div>
+        </div>
+
         <div className="projects" id="projects">
           <Projects
             id={1}
@@ -38,12 +45,16 @@ export default function Home() {
           />
           <Projects
             id={4}
-            title="Connect With Users"
-            name="CONNECTVERSE"
+            title="Ayurvedic healing website"
+            name="AYURWAYDA"
             color="blue"
-            img="/images/img6.png"
+            img="/images/img1.png"
           />
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
     </div>
   );

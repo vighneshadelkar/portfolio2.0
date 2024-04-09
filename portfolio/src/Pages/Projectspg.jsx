@@ -29,13 +29,18 @@ export default function Projectspg() {
             color="pink"
             img="/images/img4.png"
           />
+          <Projects
+          id={4}
+            title="Ayurvedic healing website"
+            name="AYURWAYDA"
+            color="blue"
+            img="/images/img4.png"
+          />
         </div>
         <div className="more">
           <h2 className="morehd">[ . . . Projects, More Projects]</h2>
         </div> 
       </div>
-
-      <hr></hr>
     </div>
   );
 }
