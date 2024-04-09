@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../style/Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,14 @@ export default function Navbar() {
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
+    document.body.style.overflow = isOpen ? 'auto' : 'hidden';
   };
+
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
 
   return (
     <div>

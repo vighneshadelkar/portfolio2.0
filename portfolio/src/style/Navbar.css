@@ -1,10 +1,11 @@
 /* Basic navbar styles */
 .navbar {
-  background-color: #fff; /* Change background color as needed */
   padding: 40px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: (0,0,0,0.2);
+  position: sticky;
 }
 
 .navbarContainer {
@@ -51,7 +52,7 @@
 }
 
 .nav-list a:hover {
-  background-color: #ddd; /* Hover background color */
+  background-color: #ddd; 
 }
 
 .nav-icon {
@@ -79,7 +80,7 @@
     right: 0;
     width: 100%; 
     height: 100vh;
-    background-color: #fff; /* Sidebar background color */
+    background-color: #fff; 
     display: flex;
     flex-direction: column;
     transform: translateX(100%);

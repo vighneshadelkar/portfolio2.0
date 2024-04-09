@@ -1,7 +1,6 @@
 import React from "react";
 import "../style/Home.css";
 import Projects from "../components/Projects";
-// import scroll from "../../public/images/scroll.gif"
 
 export default function Home() {
   return (
@@ -17,22 +16,32 @@ export default function Home() {
 
         <div className="projects" id="projects">
           <Projects
+            id={1}
             title="Tenant Finder, a new way to rent"
             name="10ANT"
             color="pink"
             img="/images/img4.png"
           />
           <Projects
-            title="Connect With Users"
+            id={2}
+            title="Connect with users"
             name="CONNECTVERSE"
             color="blue"
             img="/images/img6.png"
           />
           <Projects
+            id={3}
             title="Right's awareness for kids"
             name="RIGHTS RISING"
             color="pink"
             img="/images/img4.png"
+          />
+          <Projects
+            id={4}
+            title="Connect With Users"
+            name="CONNECTVERSE"
+            color="blue"
+            img="/images/img6.png"
           />
         </div>
       </div>
