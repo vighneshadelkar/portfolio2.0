@@ -1,20 +1,12 @@
 import React from "react";
-import "../style/Home.css";
 import Projects from "../components/Projects";
-// import scroll from "../../public/images/scroll.gif"
+import "../style/Projects.css";
 
-export default function Home() {
+export default function Projectspg() {
   return (
-    <div className="homeContainer">
-      <div className="homeWrapper">
-        <div className="selfinfo">
-          <div className="name">I Create Visually Appealing Websites</div>
-          <div className="name2">React Developer</div>
-          <div className="scroll">
-            <img src="/images/scroll.gif" alt="" />
-          </div>
-        </div>
-
+    <div className="projectsContainer">
+      <h2 className="pgHeader">Selected Projects</h2>
+      <div className="projectsWrapper">
         <div className="projects" id="projects">
           <Projects
             title="Tenant Finder, a new way to rent"
@@ -35,7 +27,12 @@ export default function Home() {
             img="/images/img4.png"
           />
         </div>
+        <div className="more">
+          <h2 className="morehd">[ . . . Projects, More Projects]</h2>
+        </div> 
       </div>
+
+      <hr></hr>
     </div>
   );
 }

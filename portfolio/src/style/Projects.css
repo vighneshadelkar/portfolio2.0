@@ -1,0 +1,208 @@
+
+.projectContainer{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(119,0,18);
+}
+
+.projectWrapperpink{
+    color: rgb(119,0,18);
+    width: 75%;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(253,241,243);
+}
+.projectWrapperpink:hover{
+    width: 75%;
+    transform: scale(0.98);
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(253,241,243);
+}
+.projectWrapperblue{
+  width: 75%;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(248,247,255);
+  color: rgb(39,28,100);
+}
+.projectWrapperblue:hover{
+  width: 75%;
+  transform: scale(0.98);
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(248,247,255);
+  color: rgb(39,28,100);
+}
+.projectInfo{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-right: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.projectHeader{
+    display: flex;
+    text-align: left;
+    margin: 20px;
+    margin-top: 40px;
+    align-items: center;
+    font-size: 75px;
+    background-color: rgba(0,0,0,0);
+    font-weight: 700;
+    z-index: 200;
+    width: 100%;
+}
+
+.smallHeader{
+  text-align: left;
+  padding: 10px;
+  font-size: 50px;
+  align-items: center;
+  font-weight: 550;
+}
+
+.projcol{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px ;
+    margin-left: 30px;
+    width: 100%;
+}
+
+.image{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    float: right;
+    z-index: -1;
+    margin-top: 150px;
+  }
+  
+  .image img {
+    width: 800px;
+    margin-right: 0px;
+    object-fit: contain;
+  }
+
+  .pgHeader{
+    font-size: 100px;
+    padding: 10px;
+  }
+
+  .more{
+    width: 75%;
+    background-color: aliceblue;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .projectsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+
+    .pgHeader{
+      font-size: 50px;
+      padding: 10px;
+    }
+
+    .more{
+      width: 75%;
+      background-color: aliceblue;
+      font-size: 10px;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .projectWrapperpink{
+      color: rgb(119,0,18);
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      background-color: rgb(253,241,243);
+  }
+  .projectWrapperpink:hover{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(253,241,243);
+  }
+  .projectWrapperblue{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(248,247,255);
+    color: rgb(39,28,100);
+  }
+  .projectWrapperblue:hover{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    color: rgb(39,28,100);
+  }
+    .projectHeader{
+        display: flex;
+        text-align: left;
+        width: fit-content;
+        padding: 10px;
+        margin: 10px;
+        font-size: 30px;
+        background-color: rgba(0,0,0,0);
+    }
+
+    .smallHeader{
+      text-align: left;
+      padding: 10px;
+      font-size: 20px;
+      align-items: center;
+      font-weight: 550;
+    }
+
+    .projcol{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px ;
+      width: 100%;
+      float: left;
+  }
+    .image{
+      margin: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      float: right;
+      z-index: -1;
+     
+    }
+    .image img {
+      width: 230px;
+      object-fit: contain;
+    }
+      
+      .projectInfo{
+        margin-top: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+  }
