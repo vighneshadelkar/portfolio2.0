@@ -7,6 +7,9 @@ import SingleProject from "./Pages/SingleProject";
 import Aboutmepg from "./Pages/Aboutmepg";
 
 function App() {
+  const backtotop=()=>{
+    window.scrollTo(0, 0);
+  }
   return (
     <BrowserRouter>
       <div className="App">
@@ -20,6 +23,7 @@ function App() {
           <Route path="/aboutme" element={<Aboutmepg/>} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
+        <button className="back" onClick={backtotop}><img src="/images/top.png" alt="" /></button>
       </div>
     </BrowserRouter>
   );

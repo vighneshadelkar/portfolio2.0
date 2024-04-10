@@ -29,6 +29,28 @@
   color: #61dafb;
 }
 
+.back{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 70px;
+  right: 80px;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  padding: 0px;
+  z-index: 999;
+  border-radius: 50%;
+}
+
+@media (max-width: 786px)
+{
+  .back{
+    display: none;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
