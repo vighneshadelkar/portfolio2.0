@@ -51,7 +51,7 @@
     margin: 20px;
     margin-top: 40px;
     align-items: center;
-    font-size: 75px;
+    font-size: 60px;
     background-color: rgba(0,0,0,0);
     font-weight: 700;
     z-index: 200;
@@ -88,7 +88,7 @@
   }
   
   .image img {
-    width: 800px;
+    width: 580px;
     margin-right: 20px;
     object-fit: contain;
   }

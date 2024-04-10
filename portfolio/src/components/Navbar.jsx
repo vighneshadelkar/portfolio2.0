@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../style/Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -9,12 +9,6 @@ export default function Navbar() {
     setIsOpen(!isOpen);
     document.body.style.overflow = isOpen ? "auto" : "hidden";
   };
-
-  useEffect(() => {
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
 
   return (
     <div>
@@ -30,8 +24,8 @@ export default function Navbar() {
               <span></span>
             </div>
             <li>
-              <a href="https://www.linkedin.com/in/vighneshadelkar/">
-                <span>&#60;</span>LINKEDIN<span>&#62;</span>
+              <a href="/aboutme">
+                <span>&#60;</span>ABOUT<span>&#62;</span>
               </a>
             </li>
             <li>
