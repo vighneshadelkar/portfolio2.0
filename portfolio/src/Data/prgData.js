@@ -46,7 +46,7 @@ const Data = [
     },
     {
         "id": 4,
-        "name": "Ayurwayda",
+        "name": "AYURWAYDA",
         "title": "Ayurvedic healing website",
         "img": "/images/ayurmain.png",
         "img1": "/images/ayur1.png",
