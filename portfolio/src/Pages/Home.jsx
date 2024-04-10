@@ -1,6 +1,9 @@
 import React from "react";
 import "../style/Home.css";
 import Projects from "../components/Projects";
+import { TypeAnimation } from "react-type-animation";
+import Footer from "../components/Footer";
+import Aboutme from "../components/Aboutme";
 
 export default function Home() {
   return (
@@ -8,10 +11,27 @@ export default function Home() {
       <div className="homeWrapper">
         <div className="selfinfo">
           <div className="name">I Create Visually Appealing Websites</div>
-          <div className="name2">React Developer</div>
+          <div className="name2">
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "Mern Stack Developer",
+                1100,
+                "",
+                1100,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: "inherit", display: "inline-block" }}
+              repeat={Infinity}
+            />
+          </div>
           <div className="scroll">
             <img src="/images/scroll.gif" alt="" />
           </div>
+        </div>
+        <div className="abtContainer">
+          <Aboutme />
         </div>
 
         <div className="col">
@@ -21,7 +41,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="projects" id="projects">
+        <div className="projects">
           <Projects
             id={1}
             title="Tenant Finder, a new way to rent"
@@ -48,13 +68,12 @@ export default function Home() {
             title="Ayurvedic healing website"
             name="AYURWAYDA"
             color="blue"
-            img="/images/img1.png"
+            img="/images/ayurmain.png"
           />
         </div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </div>
   );

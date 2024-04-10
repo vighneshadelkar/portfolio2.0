@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import Projectspg from "./Pages/Projectspg";
 import SingleProject from "./Pages/SingleProject";
+import Aboutmepg from "./Pages/Aboutmepg";
 
 function App() {
   return (
@@ -16,11 +17,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projectspg />} />
           <Route path="/project/:id" element={<SingleProject />} />
+          <Route path="/aboutme" element={<Aboutmepg/>} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
-       
       </div>
-     
     </BrowserRouter>
   );
 }
