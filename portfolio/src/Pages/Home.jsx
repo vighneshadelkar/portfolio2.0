@@ -47,7 +47,7 @@ export default function Home() {
             title="Tenant Finder, a new way to rent"
             name="10ANT"
             color="pink"
-            img="/images/img4.png"
+            img="../images/img4.png"
           />
           <Projects
             id={2}
