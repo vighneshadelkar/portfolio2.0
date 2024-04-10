@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import "../style/SingleProject.css";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import data from "../Data/prgData.js";
+import Footer from "../components/Footer.jsx";
 
 export default function SingleProject() {
   let { id } = useParams();
@@ -82,7 +83,11 @@ export default function SingleProject() {
               </button>
             </div>
           </div>
-          <hr></hr>
+          <div className="footerInfo">
+            <footer>
+              <Footer />
+            </footer>
+          </div>
         </section>
       </div>
     </div>

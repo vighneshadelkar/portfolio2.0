@@ -1,0 +1,110 @@
+.abtContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17,16,16);
+    margin-bottom: 130px;
+}
+
+.abtWrapper{
+    color: rgb(17,16,16);
+    width: 75%;
+    height: min-content;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(247,246,247);
+}
+.abtWrapper:hover{
+    width: 75%;
+    transform: scale(0.98);
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(247,246,247);
+}
+
+.abtcol{
+    padding: 70px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.abtInfo{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+}
+
+.ptrimageDiv
+{
+    display: flexs;
+}
+
+.prgImage {
+    width: 100%;
+    /* margin-right: 0px; */
+    object-fit: cover;
+    /* margin-bottom: 0px; */
+  }
+
+@media (max-width: 768px) {
+    .abtContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(17,16,16);
+        margin-bottom: 40px;
+    }
+
+    .abtWrapper{
+        color: rgb(17,16,16);
+        width: 75%;
+        height: min-content;
+        transform: scale(1.05);
+        transition: all 0.2s ease-in-out;
+        background-color: rgb(247,246,247);
+    }
+    .abtWrapper:hover{
+        width: 75%;
+        transform: scale(0.98);
+        transition: all 0.2s ease-in-out;
+        background-color: rgb(247,246,247);
+    }
+    
+    .abtcol{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .abtInfo{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 100px;
+    }
+    
+    .ptrimageDiv
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ptrImage {
+        width: 200px;
+        object-fit: contain;
+        margin-bottom: 0px;
+      }
+}
