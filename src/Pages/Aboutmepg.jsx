@@ -30,7 +30,7 @@ export default function Aboutmepg() {
             </div>
           </div>
           <div className="abtpgimageDiv">
-            <img src="/images/potrait.webp" alt="ptr" className="abtpgImage" />
+            <img src="https://vighneshadelkar.github.io/portfolio2.0/images/potrait.webp" alt="ptr" className="abtpgImage" />
           </div>
         </div>
       </div>

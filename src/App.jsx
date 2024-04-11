@@ -23,7 +23,7 @@ function App() {
           <Route path="/portfolio2.0/aboutme" element={<Aboutmepg/>} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
-        <button className="back" onClick={backtotop}><img src="/images/top.png" alt="" /></button>
+        <button className="back" onClick={backtotop}><img src="https://vighneshadelkar.github.io/portfolio2.0/images/top.png" alt="" /></button>
       </div>
     </BrowserRouter>
   );
