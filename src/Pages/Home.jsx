@@ -14,7 +14,6 @@ export default function Home() {
           <div className="name2">
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Mern Stack Developer",
                 1100,
                 "",
@@ -27,7 +26,7 @@ export default function Home() {
             />
           </div>
           <div className="scroll">
-            <img src="/images/scroll.gif" alt="" />
+            <img src="https://vighneshadelkar.github.io/portfolio2.0/images/scroll.gif" alt="" />
           </div>
         </div>
         <div className="abtContainer">
@@ -47,28 +46,28 @@ export default function Home() {
             title="Tenant Finder, a new way to rent"
             name="10ANT"
             color="pink"
-            img="../images/img4.png"
+            img="https://vighneshadelkar.github.io/portfolio2.0/images/img4.png"
           />
           <Projects
             id={2}
             title="Connect with users"
             name="CONNECTVERSE"
             color="blue"
-            img="/images/img6.png"
+            img="https://vighneshadelkar.github.io/portfolio2.0/images/img6.png"
           />
           <Projects
             id={3}
             title="Right's awareness for kids"
             name="RIGHTS RISING"
             color="pink"
-            img="/images/img4.png"
+            img="https://vighneshadelkar.github.io/portfolio2.0/images/img4.png"
           />
           <Projects
             id={4}
             title="Ayurvedic healing website"
             name="AYURWAYDA"
             color="blue"
-            img="/images/ayurmain.png"
+            img="https://vighneshadelkar.github.io/portfolio2.0/images/ayurmain.png"
           />
         </div>
         <footer>

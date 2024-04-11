@@ -15,7 +15,7 @@ export default function SingleProject() {
   }, [id]);
 
   function handleButtonClick() {
-    navigate(`/project/${(id % 4) + 1}`);
+    navigate(`/portfolio2.0/project/${(id % 4) + 1}`);
   }
 
   function handlegithub() {
@@ -58,7 +58,7 @@ export default function SingleProject() {
               <h2>Check out the project</h2>
               <button className="githublink" onClick={handlegithub}>
                 <img
-                  src="/images/github.png"
+                  src="https://vighneshadelkar.github.io/portfolio2.0/images/github.png"
                   alt="github icon"
                   className="githubicon"
                 />

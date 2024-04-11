@@ -36,7 +36,7 @@ export default function Projectspg() {
               </div>
               <div className="imageDiv">
                 <img
-                  src="/images/github2.png"
+                  src="https://vighneshadelkar.github.io/portfolio2.0/images/github2.png"
                   alt="github logo"
                   className="githubImg"
                 />
