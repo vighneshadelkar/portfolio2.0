@@ -25,7 +25,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar">
         <div className="navbarContainer">
-          <Link to="/" className="logo">
+          <Link to="/portfolio2.0/" className="logo">
             Vighnesh Adelkar
           </Link>
           <ul className={`nav-list ${isOpen ? "active" : ""}`}>
