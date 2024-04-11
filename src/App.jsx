@@ -17,10 +17,10 @@ function App() {
           <Navbar />
         </header>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projectspg />} />
-          <Route path="/project/:id" element={<SingleProject />} />
-          <Route path="/aboutme" element={<Aboutmepg/>} />
+          <Route path="/portfolio2.0/" element={<Home />} />
+          <Route path="/portfolio2.0/projects" element={<Projectspg />} />
+          <Route path="/portfolio2.0/project/:id" element={<SingleProject />} />
+          <Route path="/portfolio2.0/aboutme" element={<Aboutmepg/>} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
         <button className="back" onClick={backtotop}><img src="/images/top.png" alt="" /></button>
