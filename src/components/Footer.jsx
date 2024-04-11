@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="col3">
             Lets connect digitally
             <div className="name3">
-              <img src="/images/cc.png" alt="copyright" className="ccimg" />
+              <img src="/portfolio2.0/images/cc.png" alt="copyright" className="ccimg" />
               2024 Vighnesh Adelkar
             </div>
           </div>
