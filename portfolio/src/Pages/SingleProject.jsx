@@ -76,7 +76,6 @@ export default function SingleProject() {
               ) : (
                 <div></div>
               )}
-
               <br></br>
               <button className="nextproj" onClick={handleButtonClick}>
                 Next Project

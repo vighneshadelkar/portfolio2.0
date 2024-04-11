@@ -8,6 +8,43 @@
     
 }
 
+.githubContainer{
+  margin-top: 80px;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0,57,124);
+}
+
+
+
+.githubWrapper{
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  width: 76%;
+  background-color: rgb(238,244,253);
+}
+
+.githubWrapper:hover{
+  width: 76%;
+  transform: scale(0.98);
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(238,244,253);
+}
+
+.imageDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+  padding: 0px;
+}
+.githubImg{
+  object-fit: cover;
+}
+
 .projectWrapperpink{
     color: rgb(119,0,18);
     width: 75%;
@@ -158,6 +195,7 @@
         width: fit-content;
         padding: 10px;
         margin: 10px;
+        margin-left: 0px;
         font-size: 30px;
         background-color: rgba(0,0,0,0);
     }
@@ -206,6 +244,34 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+
+      .githubContainer{
+        margin-top: 80px;
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .githubWrapper{
+        width: 80%;
+        background-color: rgb(238,244,253);
+      }
+      
+      .imageDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        padding: 5px;
+        margin-bottom: 0px;
+      }
+      .githubImg{
+        width: 230px;
+        margin-right: 30px;
+        object-fit: contain;
       }
 
   }

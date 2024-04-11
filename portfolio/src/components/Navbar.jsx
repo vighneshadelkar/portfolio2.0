@@ -10,6 +10,17 @@ export default function Navbar() {
     document.body.style.overflow = isOpen ? "auto" : "hidden";
   };
 
+  const toGithub = () => {
+    const githubUrl = "https://github.com/vighneshadelkar";
+    window.open(githubUrl, "_blank");
+  };
+
+  const toResume = () => {
+    const resumeUrl =
+      "https://docs.google.com/document/d/1lAr4Fr4o8I7eDjm0r7vJaONd_ftcRMKUY3W9H_zYNec/edit?usp=sharing";
+    window.open(resumeUrl, "_blank");
+  };
+
   return (
     <div>
       <nav className="navbar">
@@ -24,22 +35,22 @@ export default function Navbar() {
               <span></span>
             </div>
             <li>
-              <a href="/aboutme">
+              <Link to="/aboutme">
                 <span>&#60;</span>ABOUT<span>&#62;</span>
-              </a>
+              </Link>
             </li>
-            <li>
-              <a href="https://github.com/vighneshadelkar">
+            <li onClick={toGithub} role="button">
+              <Link>
                 <span>&#60;</span>GITHUB<span>&#62;</span>
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/projects">
                 <span>&#60;</span>PROJECTS<span>&#62;</span>
               </Link>
             </li>
-            <li>
-              <Link to="https://docs.google.com/document/d/1lAr4Fr4o8I7eDjm0r7vJaONd_ftcRMKUY3W9H_zYNec/edit?usp=sharing">
+            <li onClick={toResume} role="button">
+              <Link>
                 <span>&#60;</span>RESUME<span>&#62;</span>
               </Link>
             </li>
