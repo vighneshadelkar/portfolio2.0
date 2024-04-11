@@ -35,7 +35,7 @@ export default function Navbar() {
               <span></span>
             </div>
             <li>
-              <Link to="/aboutme">
+              <Link to="/portfolio2.0/aboutme">
                 <span>&#60;</span>ABOUT<span>&#62;</span>
               </Link>
             </li>
