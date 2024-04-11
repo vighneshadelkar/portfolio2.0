@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Aboutme() {
   const navigate = useNavigate();
   const toAbout = () => {
-    navigate("/aboutme/");
+    navigate("/portfolio2.0/aboutme/");
   };
   return (
     <div className="abtContainer " onClick={toAbout}>
@@ -18,7 +18,7 @@ export default function Aboutme() {
             <h1 className="smallHeader">About me</h1>
           </div>
           <div className="ptrimageDiv">
-            <img src="/images/potrait.webp" alt="ptr" className="ptrImage" />
+            <img src="https://vighneshadelkar.github.io/portfolio2.0/images/potrait.webp" alt="ptr" className="ptrImage" />
           </div>
         </div>
       </div>

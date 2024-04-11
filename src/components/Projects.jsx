@@ -7,7 +7,7 @@ export default function Projects({color, title, name , img ,id}) {
   const navigate = useNavigate();
 
   const handleNavigation = () => {
-    navigate(`/project/${id}`);
+    navigate(`/portfolio2.0/project/${id}`);
   };
 
   return (
