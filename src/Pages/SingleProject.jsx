@@ -18,9 +18,10 @@ export default function SingleProject() {
     navigate(`/portfolio2.0/project/${(id % 4) + 1}`);
   }
 
-  function handlegithub() {
-    navigate(projectData.link);
-  }
+  const handlegithub = () => {
+    const gitUrl = projectData.link;
+    window.open(gitUrl, "_blank");
+  };
 
   return (
     <div className="prjContainer">
