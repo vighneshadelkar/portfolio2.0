@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 .projectContainer{
     width: 100vw;
     display: flex;
@@ -93,6 +93,7 @@
     font-weight: 700;
     z-index: 200;
     width: 100%;
+    font-family: "Oswald", serif;
 }
 
 .smallHeader{
@@ -198,6 +199,7 @@
         margin-left: 0px;
         font-size: 30px;
         background-color: rgba(0,0,0,0);
+        font-family: "Oswald", serif;
     }
 
     .smallHeader{
