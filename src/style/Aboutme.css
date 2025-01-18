@@ -1,110 +1,129 @@
-.abtContainer{
+.abtContainer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(17,16,16);
+    color: rgb(17, 16, 16);
     margin-bottom: 130px;
-}
-
-.abtWrapper{
-    color: rgb(17,16,16);
+  }
+  
+  .abtWrapper {
+    color: rgb(17, 16, 16);
     width: 75%;
     height: min-content;
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
-    background-color: rgb(247,246,247);
-}
-.abtWrapper:hover{
-    width: 75%;
+    background-color: rgb(247, 246, 247);
+  }
+  .abtWrapper:hover {
     transform: scale(0.98);
     transition: all 0.2s ease-in-out;
-    background-color: rgb(247,246,247);
-}
-
-.abtcol{
-    padding: 70px; 
+  }
+  
+  .abtcol {
+    padding: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.abtInfo{
+  }
+  .abtInfo {
     width: 100%;
-    height: 100%;
-    padding: 30px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
     display: flex;
     flex-direction: row;
-    column-gap: 100px;
-}
-
-.ptrimageDiv
-{
-    display: flexs;
-}
-
-.prgImage {
-    width: 100%;
-    /* margin-right: 0px; */
-    object-fit: cover;
-    /* margin-bottom: 0px; */
+    column-gap: 30px;
+    align-items: center;
+    justify-content: space-between; /* Ensures even spacing between text and image */
   }
-
-@media (max-width: 768px) {
-    .abtContainer{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgb(17,16,16);
-        margin-bottom: 40px;
+  
+  
+  .projectHeader {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .smallHeader {
+    font-size: 2rem;
+    color: rgb(80, 80, 80);
+    margin-top: 20px;
+  }
+  
+  .ptrimageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .ptrImage {
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    max-height: 100%; /* Keeps the image height in check */
+    object-fit: contain; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    margin: 0 auto; /* Centers the image */
+    display: block; /* Ensures proper centering */
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .projectHeader {
+      font-size: 2.5rem;
     }
-
-    .abtWrapper{
-        color: rgb(17,16,16);
-        width: 75%;
-        height: min-content;
-        transform: scale(1.05);
-        transition: all 0.2s ease-in-out;
-        background-color: rgb(247,246,247);
+  
+    .smallHeader {
+      font-size: 1.8rem;
     }
-    .abtWrapper:hover{
-        width: 75%;
-        transform: scale(0.98);
-        transition: all 0.2s ease-in-out;
-        background-color: rgb(247,246,247);
+  
+    .abtInfo {
+      column-gap: 50px;
     }
-    
-    .abtcol{
-        padding: 0px;
-        display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .abtContainer {
+      margin-bottom: 40px;
+    }
+  
+    .abtWrapper {
+      width: 90%;
+      transform: scale(1);
+    }
+  
+    .abtcol {
+      padding: 20px;
+    }
+  
+    .abtInfo {
         flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .abtInfo{
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        display: flex;
-        flex-direction: column;
-        column-gap: 100px;
-    }
-    
-    .ptrimageDiv
-    {
-        display: flex;
-        justify-content: center;
         align-items: center;
-    }
-    
-    .ptrImage {
-        width: 200px;
-        object-fit: contain;
-        margin-bottom: 0px;
+        text-align: center;
+        row-gap: 20px; /* Adds space between text and image */
       }
-}
+  
+    .projectHeader {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .smallHeader {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .ptrImage {
+        width: 80%; /* Scales the image for smaller screens */
+        max-width: 250px; /* Optional: sets a max size */
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .projectHeader {
+      font-size: 1.8rem;
+    }
+  
+    .smallHeader {
+      font-size: 1.2rem;
+    }
+  
+    .ptrImage {
+      width: 150px;
+    }
+  }
+  
