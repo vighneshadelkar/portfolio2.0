@@ -42,6 +42,7 @@
     font-family: "Macondo", serif;
     margin-bottom: 20px;
     width: 80%;
+    text-shadow: 15px 25px 10px rgba(0, 105, 241, 0.5);
 }
 .name2{
     font-size: 40px;
