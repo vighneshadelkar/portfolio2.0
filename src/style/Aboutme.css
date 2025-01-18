@@ -92,11 +92,11 @@
     }
   
     .abtInfo {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        row-gap: 20px; /* Adds space between text and image */
-      }
+      flex-direction: column;
+      align-items: center;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
   
     .projectHeader {
       font-size: 2rem;
@@ -107,10 +107,11 @@
       font-size: 1.5rem;
       text-align: center;
     }
+  
     .ptrImage {
-        width: 80%; /* Scales the image for smaller screens */
-        max-width: 250px; /* Optional: sets a max size */
-      }
+      width: 200px;
+      height: auto;
+    }
   }
   
   @media (max-width: 480px) {
